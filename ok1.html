@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Toy Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Local Toy Store</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Cart</a>
+        </nav>
+    </header>
+    <main>
+        <section id="products">
+            <h2>Products</h2>
+            <div class="product">
+                <img src="11.jpg" alt="Toy Car">
+                <h3>Toy Car</h3>
+                <p>Price: ₹300</p>
+                <button onclick="addToCart('Toy Car', 300)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="22.jpg" alt="Doll">
+                <h3>Doll</h3>
+                <p>Price: ₹450</p>
+                <button onclick="addToCart('Doll', 450)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="33.jpg" alt="Lego Set">
+                <h3>Lego Set</h3>
+                <p>Price: ₹500</p>
+                <button onclick="addToCart('Lego Set', 500)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="44.jpg" alt="Action Figure">
+                <h3>Action Figure</h3>
+                <p>Price: ₹350</p>
+                <button onclick="addToCart('Action Figure', 350)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="55.jpg" alt="Puzzle">
+                <h3>Puzzle</h3>
+                <p>Price: ₹200</p>
+                <button onclick="addToCart('Puzzle', 200)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="66.jpg" alt="Board Game">
+                <h3>Board Game</h3>
+                <p>Price: ₹400</p>
+                <button onclick="addToCart('Board Game', 400)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="88.jpg" alt="Stuffed Animal">
+                <h3>Stuffed Animal</h3>
+                <p>Price: ₹250</p>
+                <button onclick="addToCart('Stuffed Animal', 250)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="77.jpg" alt="Remote Car">
+                <h3>Remote Car</h3>
+                <p>Price: ₹500</p>
+                <button onclick="addToCart('Remote Car', 500)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="99.jpg" alt="Building Blocks">
+                <h3>Building Blocks</h3>
+                <p>Price: ₹300</p>
+                <button onclick="addToCart('Building Blocks', 300)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="th.jpg" alt="Toy Train">
+                <h3>Toy Train</h3>
+                <p>Price: ₹450</p>
+                <button onclick="addToCart('Toy Train', 450)">Add to Cart</button>
+            </div>
+        </section>
+        <section id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cartItems"></ul>
+            <p>Total: ₹<span id="totalPrice">0</span></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
